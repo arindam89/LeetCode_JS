@@ -11,5 +11,7 @@
 	},
 	"author": "",
 	"license": "GPLv3",
-	"dependencies": {}
+	"dependencies": {
+		"jest": "^26.0.1"
+	}
 }

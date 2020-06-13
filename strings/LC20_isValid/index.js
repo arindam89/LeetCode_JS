@@ -17,7 +17,7 @@ function isValid(s) {
       const topElement = stack[stack.length - 1];
       if (open_chars.indexOf(topElement) === close_chars.indexOf(char)) {
         stack.pop();
-      }
+      } else return false;
     }
   }
   return stack.length === 0;

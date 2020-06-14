@@ -51,7 +51,36 @@ console.log(
 Number.MIN_VALUE returns the smallest floating-point number possible.
 Number.MIN_VALUE is equal to 5e-324. 
 This is not a negative number since it is the smallest floating-point number possible and means that 
-Number.MIN_VALUE is actually bigger than Number.MIN_- SAFE_INTEGER.
+Number.MIN_VALUE is actually bigger than Number.MIN_SAFE_INTEGER. */
+/** 
 Number.MIN_VALUE is also the closest floating point to zero. 1 Number.MIN_VALUE - 1 == -1; // true
 This is because this is similar to writing 0 - 1 == -1.
+ */
+
+/**
+ * Infinity
+ * ========
+ * The only thing greater than Number.MAX_VALUE is Infinity,
+ * and the only thing smaller than Number.MAX_SAFE_INTEGER is -Infinity.
+ *
+ * Infinity > Number.MAX_SAFE_INTEGER; // true
+ * -Infinity < Number.MAX_SAFE_INTEGER // true;
+ * -Infinity -32323323 == -Infinity -1; // true
+ *
+ * This evaluates to true because nothing can go smaller than -Infinity.
+ *
+ * Size Summary
+ * ============
+ *
+ * This inequality summarizes the size of JavaScript numbers
+ * from smallest (left) to largest (right):
+ *
+ * -Infinity
+ *  < Number.MIN_SAFE_INTEGER
+ *  < Number.MIN_VALUE
+ *  < 0
+ *  < Number.MAX_SAFE_INTEGER
+ *  < Number.MAX_VALUE
+ *  < Infinity
+ *
  */

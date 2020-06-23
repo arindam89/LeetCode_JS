@@ -14,7 +14,7 @@
       "type": "node-terminal",
       "name": "Run Script: LC300_lengthOfLIS",
       "request": "launch",
-      "command": "node dynamicProgramming/LC300_lengthOfLIS/index.js",
+      "command": "node others/LC118_pascalTriangle/index.js",
       "cwd": "${workspaceFolder}"
     }
   ]
